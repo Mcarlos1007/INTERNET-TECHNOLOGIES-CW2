@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile Page</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 65%;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            border-bottom: 2px solid black;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            border-right: 2px solid black;
+        }
+
+        .column:last-child {
+            border-right: none;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        table {
+            width: 75%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .contacts {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .contacts a {
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .contact-row  {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-item img {
+            width: 24px;
+            height: 24px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="row">
+        <div class="column profile">
+            <img src="carlos.jpeg" alt="My Picture">
+            
+            <div>
+                <h2>My Bio-Data</h2>
+                <p>
+                    My name is Mulindwa Carlos. I am a second year Information Technology and Computing student at Kyambogo University,with an interest in software engineering. I am passionate about programming . I enjoy learning new skills and improving
+                    my knowledge in software engineering.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h3>Educational Background</h3>
+            <ol>
+                <li>Kyambogo University, Bachelor In Information Technology and Computing, 2024-2027</li>
+                <li>Standard High School, Uganda Advanced Certificate of Education, 2022-2023</li>
+                <li>St Joseph SS, Uganda Certificate of Education, 2017-2021</li>
+                <li>Standard Junior, Primary Leaving Examinations, 2011-2016</li>
+            </ol>
+        </div>
+
+        <div class="column">
+            <h3>Hobbies and Skills</h3>
+            <ul>
+                <li>Programming (C++, C, Python)</li>
+                <li>networking fundamentals</li>
+                <li>database management</li>
+                <li>system administrator</li>
+                <li>solving math problems</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h3>Schedule of a day in my life</h3>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+                <tr>
+                    <td>7am - 8am</td>
+                    <td>Database management review and Normalising of Data</td>
+                </tr>
+                <tr>
+                    <td>8am - 9am</td>
+                    <td>Database management review and Normalising of Data</td>
+                </tr>
+                <tr>
+                    <td>9am - 10am</td>
+                    <td>Breakfast and organisation for the day</td>
+                </tr>
+                <tr>
+                    <td>10am - 2pm</td>
+                    <td>Programming practice</td>
+                </tr>
+                <tr>
+                    <td>2pm - 4pm</td>
+                    <td>Lunch and preparation for lectures</td>
+                </tr>
+                <tr>
+                    <td>5pm - 9pm</td>
+                    <td>Evening lecture</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="contact-row">
+            <div class="contact-item">
+                <img src="email.png" alt="Email">
+                <span>mulindwacarlos7@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <img src="telephone.png" alt="Telephone">
+                <span>+256742599641</span>
+            </div>
+            <div class="contact-item">
+                <img src="instagram.jpg" alt="Instagram">
+                <span>@Mcarlos</span>
+            </div>
+    </div>
+
+</div>
+
+</body>
+</html>
